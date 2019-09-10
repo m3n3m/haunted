@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    background-size: cover;
+}
+
+#haunted {
+    img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        animation: lightning 3s infinite;
+    }
+}
+
+@keyframes lightning {
+    0% {
+        filter: brightness(20%);
+    }
+
+    48% {
+        filter: brightness(18%);
+    }
+
+    50% {
+        filter: sepia(1) contrast(2) brightness(200%);
+    }
+
+    53% {
+        filter: brightness(400%);
+    }
+
+    55% {
+        filter: brightness(10%);
+    }
+
+    57% {
+        filter: sepia(1) contrast(2) brightness(200%);
+    }
+
+    65% {
+        filter: brightness(10%);
+    }
+
+    86% {
+        filter: brightness(200%);
+    }
+
+    90% {
+        filter: sepia(1) contrast(3) brightness(200%)
+    }
+
+    96% {
+        filter: brightness(10%);
+    }
+}
