@@ -3,6 +3,8 @@ body {
     padding: 0;
     background: black;
     background-size: cover;
+    animation: shake 0.3s cubic-bezier(.36, .07, .19, .97) infinite;
+
 }
 
 #haunted {
@@ -10,7 +12,7 @@ body {
         width: 100%;
         height: auto;
         vertical-align: middle;
-        animation: lightning 3s infinite;
+        animation: lightning 2.5s infinite;
     }
 }
 
@@ -53,5 +55,29 @@ body {
 
     96% {
         filter: brightness(10%);
+    }
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translateX(-2px);
+    }
+
+    20%,
+    80% {
+        transform: translateX(2px);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translateX(-4px);
+    }
+
+    40%,
+    60% {
+        transform: translateX(4px);
     }
 }
